@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Teko:wght@400;500&display=swap');
+
+/* Configuracion inicial */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --main-bg-color: #18191A;
+    --main-font-color: rgb(226, 226, 226);
+    --nav-font-color: rgb(255, 255, 255);
+    --nav-backHover-color: rgb(158, 158, 158);
+    --nav-back-color: rgba(0, 0, 0, 0.7);
+    --h1-font-color: rgb(236, 195, 255);
+    --titles-font-family: 'Teko', sans-serif;
+    --p-font-color: rgb(230, 230, 230);
+  }
+
+body{
+    font-family: 'Hind', sans-serif;
+    background: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-stretch: expanded;
+
+
+}
+
+
+/* Menu y listas */
+header {
+    position: fixed;
+    z-index: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    text-align: center ;
+    padding-top: 1rem;
+    position: sticky;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+.navBarBack {
+    background: var(--nav-back-color);
+    height: 2.5rem;
+
+}
+
+nav ul li {
+    display: inline-block; 
+    text-align: center;
+    padding-top: .5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-backHover-color);
+    font-weight: bold;
+    margin: 2rem;
+    
+    
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: var(--nav-font-color);
+    border-bottom:.1rem solid var(--nav-font-color) ;
+    padding: .2rem 0 .2rem 0;
+}
+
+/* Submenu */
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav li ul li{
+    position: relative;
+    display: block;
+    background: var(--nav-back-color);
+
+}
+
+
+
+/* Tabla */
+th, td {
+    padding-left: 10rem;
+}
+
+ol li {
+    color: rgb(255, 68, 68);
+    text-align: center;
+}
+
+
+
+/* Parrafos del home */
+
+
+.parrafos{
+    color: var(--p-font-color);
+    font-size: 1.1rem;
+    margin: auto;
+    padding: 1em 2em 0 2em;
+    word-spacing: .2rem;
+}
+
+/* Titulos de las paginas */
+
+.titulosPrincipales {
+    color: var(--h1-font-color);
+    font-family: var(--titles-font-family);
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+    
+}
+
+.titulosSecundarios {
+    color:  var(--h1-font-color);
+    font-family: var(--titles-font-family);
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    
+}
+
+
+/* Hero Image */
+
+.heroImage{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/index/portada.jpg") fixed center/cover;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.txtHome{
+    margin: 2rem 12rem 2rem 12rem;
+}
+
+
