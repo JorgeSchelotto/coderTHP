@@ -3,6 +3,7 @@
 /* Configuracion inicial */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -43,6 +44,7 @@ nav {
     text-align: center ;
     padding-top: 1rem;
     position: sticky;
+
 }
 
 nav ul {
@@ -52,11 +54,13 @@ nav ul {
 .navBarBack {
     background: var(--nav-back-color);
     height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
 
 nav ul li {
-    display: inline-block; 
     text-align: center;
     padding-top: .5rem;
 }
@@ -149,6 +153,7 @@ ol li {
 .heroImage{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/index/portada.jpg") fixed center/cover;
     height: 100vh;
+    max-width: 100vw;
     position: relative;
     top: 0;
     bottom: 0;
@@ -171,3 +176,95 @@ ol li {
 }
 
 
+
+
+/* Seccion multimedia */
+
+.multimediaContainerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.multimediaContainerColumn {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: min-content;
+    
+    
+}
+
+
+/* Estilo de la galeria */
+
+.grid-gallery {
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-gap: 1rem;
+    grid-auto-flow: row dense;
+  }
+  
+  @media all and (min-width: 320px) {
+    .grid-gallery {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 1rem 3rem 1rem 3rem;
+    }
+  }
+  
+  @media all and (min-width: 768px) {
+    .grid-gallery {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1rem 4rem 1rem 4rem;
+    }
+  }
+  
+  @media all and (min-width: 1024px) {
+    .grid-gallery {
+      grid-template-columns: repeat(6, 1fr);
+      padding: 1rem 6rem 1rem 6rem;
+    }
+  }
+
+  @media all and (min-width: 1920px) {
+    .grid-gallery {
+      grid-template-columns: repeat(6, 1fr);
+      padding: 1rem 20rem 1rem 20rem;
+    }
+  }
+  
+  .grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+4) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+6) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  
+  .grid-gallery__item:nth-child(11n+7) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+8) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .grid-gallery__item:nth-child(11n+9) {
+    grid-row: span 3;
+  }
+  
+  .grid-gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
