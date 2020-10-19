@@ -5,94 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Document</title>
 </head>
 
 
-
-<nav>
-    <ul>
-        <div class="navBarBack">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="nosotros.html">
-                <spam class="navLink">Nosotrxs</spam>
-            </a></li>
-        <li><a href="about.html">
-                <spam class="navLink">Que hacemos?</spam>
-            </a></li>
-        <li><a href="multimedia.html">
-                <spam class="navLink">Media</spam>
-            </a>
-            <ul>
-                <li> <a href="gallery.html"> Fotos </a> </li>
-                <li><a href=""> Videos </a></li>
-                <li><a href=""> Audio </a></li>
-            </ul>
-        </li>
-        <li><a href="discografia.html">
-                <spam class="navLink">Discografía</spam>
-            </a></li>
-        <li><a href="contacto.html">
-                <spam class="navLink">Contacto</spam>
-            </a></li>
-        
-        </div>
-    </ul>
-</nav>
-
-
-
-
 <body>
     <h1 class="titulosPrincipales">Contacto</h1>
-    <br>
-    <br>
-    <form action="" method="get">
-    <fieldset>
-        <legend>Formulario de contacto</legend>
-        <p>
-        <label for="nombre"> Nombre </label>
-        <br>
-        <input type="text" name="nombre" id="" placeholder="Ingrese su nombre">
-        </p>
+    <nav> 
+        <ul>
+            <div class="navBarBack" id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="nosotros.html">
+                    <spam class="navLink">Nosotrxs</spam>
+                </a></li>
+            <li><a href="">
+                    <spam class="navLink">Media</spam>
+                </a>
+                <ul>
+                    <li> <a href="gallery.html"> Fotos </a> </li>
+                    <li><a href="./multimedia.html"> Videos </a></li>
+                    <li><a href="https://thprocks.bandcamp.com/"> Audio </a></li>
+                </ul>
+            </li>
+            <li><a href="discografia.html">
+                    <spam class="navLink">Discografía</spam>
+                </a></li>
+            <li><a href="contacto.html">
+                    <spam class="navLink">Contacto</spam>
+                </a></li>
+            
+            </div>
+        </ul>
+    </nav>
 
-        <p>
-        <label for="apellido"> Apellido </label>
-        <br>
-        <input type="text" name="apellido" id="" placeholder="Ingrese su apellido">
-        </p>
+    <form class="form animate__animated animate__fadeInUp" action="GET">
+        <h2 id="formTitle">Mandanos un mensaje</h2>
+        <p type="Name:"><input placeholder="¿Como te llamas?"></input></p>
+        <p type="Email:"><input placeholder="¿Cual es tu email?"></input></p>
+        <p type="Message:"><input placeholder="¿Que opinas de nosotrxs?"></input></p>
+        <button>Enviar</button>
+      </form>
 
-        <p>
-        <label for="email"> Email </label>
-        <br>
-        <input type="text" name="email" id="" placeholder="Ingrese su email">
-        <br>
-        <span><small>Nunca compartiremos tu email o datos de contacto</small></span>
-        </p>
 
-        <p>
-        <select name="Estado Civil" id="">
-            <option value="solterx">Solterx</option>
-            <option value="casadx">Casadx</option>
-            <option value="viudx">Viudx</option>
-        </select>
-        </p>
-
-        <p>
-            <label for="deseaElNews">¿Desea recibir el Newsletter?</label>
-            <input type="checkbox" name="deseaElNews" id="">
-        </p>
-
-        <p>
-            <label for="comentarios">Comentarios</label>
-            <br>
-            <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Dejanos tus comentarios"></textarea>
-        </p>
-
-        <input type="reset" value="BORRAR">
-        <input type="submit" value="ENVIAR">
-    </fieldset>
-    </form>
+         <!-- Scripts javascript -->
+        <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>

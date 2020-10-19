@@ -5,88 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Document</title>
 </head>
 
 
-<nav>
-    <ul>
-        <div class="navBarBack">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="nosotros.html">
-                <spam class="navLink">Nosotrxs</spam>
-            </a></li>
-        <li><a href="about.html">
-                <spam class="navLink">Que hacemos?</spam>
-            </a></li>
-        <li><a href="multimedia.html">
-                <spam class="navLink">Media</spam>
-            </a>
-            <ul>
-                <li> <a href="gallery.html"> Fotos </a> </li>
-                <li><a href=""> Videos </a></li>
-                <li><a href=""> Audio </a></li>
-            </ul>
-        </li>
-        <li><a href="discografia.html">
-                <spam class="navLink">Discografía</spam>
-            </a></li>
-        <li><a href="contacto.html">
-                <spam class="navLink">Contacto</spam>
-            </a></li>
-        
-        </div>
-    </ul>
-</nav>
-
-
-
 <body>
     <h1 class="titulosPrincipales">Discografia</h1>
+    <nav> 
+        <ul>
+            <div class="navBarBack" id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="nosotros.html">
+                    <spam class="navLink">Nosotrxs</spam>
+                </a></li>
+            <li><a href="">
+                    <spam class="navLink">Media</spam>
+                </a>
+                <ul>
+                    <li> <a href="gallery.html"> Fotos </a> </li>
+                    <li><a href="./multimedia.html"> Videos </a></li>
+                    <li><a href="https://thprocks.bandcamp.com/"> Audio </a></li>
+                </ul>
+            </li>
+            <li><a href="discografia.html">
+                    <spam class="navLink">Discografía</spam>
+                </a></li>
+            <li><a href="contacto.html">
+                    <spam class="navLink">Contacto</spam>
+                </a></li>
+            
+            </div>
+        </ul>
+    </nav>
     <br>
     <br>
-    <table>
-        <tr>
-          <th>Disco</th>
-          <th>año</th>
-          <th>canciones</th>
-        </tr>
-        <tr>
-          <td>Agorafobia</td>
-          <td>1985</td>
-          <td>
-              <ol>
-                  <li>Ushi</li>
-                  <li>Yokai</li>
-                  <li>Le samurai</li>
-              </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>Trilogía del Sprawl</td>
-          <td>1984</td>
-          <td>
-            <ol>
-                <li>Neuromante</li>
-                <li>Conde Cero</li>
-                <li>Mona Lisa acelerada</li>
-            </ol>
-          </td>
-        </tr>
+    <section >
+        <article class="discografia animate__animated animate__slideInRight">
+            <div class="divImagenDisco">
+                <a href="https://open.spotify.com/album/6e4jOwPyT9Xp9fy9nzuXDS?si=wSzZ-ZSKRJ-gM-2zDLoNQA">
+                    <img class="imagenDisco" src="../assets/img/discografia/thp_disco_1.jpg" alt="" srcset="">
+                </a>
+            </div>
 
-        <tr>
-            <td>Days of the phoenix</td>
-            <td>2020</td>
-            <td>
-                <ol>
-                    <li>Beyond the black rainbow</li>
-                    <li>The beyond</li>
-                    <li>Event Horizon</li>
-                </ol>
-            </td>
-          </tr>
-      </table>
-
+            <div class="listaTemas">
+                <ul>
+                    <li>1 - Disparos en la noche</li>
+                    <li>2 - jojo Bizarre adventure</li>
+                    <li>3 - La dalia negra</li>
+                    <li>4 - Uzumaki</li>
+                    <li>5 - Akira</li>
+                    <li>6 - La noche del terror ciego</li>
+                    <li>7 - One Piece</li>
+                    <li>8 - kozure okami</li>
+                    <li>9 - GunnM</li>
+                    <li>10 - Data array</li>
+                    <li>11 - In the end</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+  <!-- Scripts javascript -->
+  <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>
