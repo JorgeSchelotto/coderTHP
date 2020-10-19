@@ -362,8 +362,7 @@ form button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  animation-duration: .5s;
-  animation-name: discografia;
+  width: 100vw;
 }
 
 .imagenDisco {
