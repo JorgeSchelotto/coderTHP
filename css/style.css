@@ -91,12 +91,12 @@ ol li {
 /* Hero Image */
 
 #heroImage {
-  background: url("../assets/img/index/portada2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background: url("../assets/img/index/portada2.jpg"); */
+  background: linear-gradient(-45deg, rgba(1, 26, 24, 0.6), rgba(22, 1, 1, 0.6)), url("../assets/img/index/footer.jpg") no-repeat top center;
   background-size: cover;
+  background-origin: content-box;
   height: 100vh;
-  min-width: 100vw;
+  min-width: auto;
   position: relative;
   top: 0;
   bottom: 0;
@@ -397,20 +397,53 @@ i {
 
 /* FOOTER */
 #footer{
-  height: 50vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
 
 #navFooter a {
   margin: 1rem;
   color:var(--nav-backHover-color);
+  z-index: 9999;
 }
 
 #navFooter a:hover {
-  margin: 2rem;
   color:var(--nav-font-color);
   text-decoration: none;
 }
 
+
+#heroImageFooter {
+  height: inherit;
+  /* background: linear-gradient(-45deg, rgba(1, 26, 24, 0.8), rgba(22, 1, 1, 0.5)), url("../assets/img/index/footer.jpg") no-repeat center center fixed; */
+  background: linear-gradient(to right, #11151a52,#00000036), url("../assets/img/index/portada2.jpg") no-repeat top center fixed;
+  background-size: cover;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.modal-dialog {
+  margin: 20vh auto 0px auto;
+  
+}
+
+.bgDark{
+  background-color: #000000bd;
+  border: none;
+}
+
+
+.bgDarkForm{
+  background-color: #6666663a;
+  border: none;
+}
 /* Section ADELANTO */
 
 /* .adelanto{

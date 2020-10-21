@@ -63,8 +63,39 @@
         <div class="heroText">
             <h1 class="titulosPrincipales">THP</h1>
             <h3 class="titulosSecundarios">TIEMPO DE HEROES Y PERDEDORES</h3>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                CONTACTANOS
+            </button>
+
         </div>
     </section>
+
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bgDark">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control bgDarkForm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control bgDarkForm" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- NEWS SECTION -->
@@ -73,36 +104,95 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="titulosPrincipales" id="presentando">NUEVO ADELANTO</h1>
-                    <article>
-                        <div class="divImagenDisco">
-                            <a href="https://open.spotify.com/album/6e4jOwPyT9Xp9fy9nzuXDS?si=wSzZ-ZSKRJ-gM-2zDLoNQA">
-                                <img class=" imagenDiscoIndex img-fluid" src="../assets/img/discografia/thp_disco_1.jpg"
-                                    alt="" srcset="">
-                            </a>
+                    <div>
+                        <div class="col-md-10 offset-md-1">
+                            <article class="divImagenDisco">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item imagenDiscoIndex"
+                                        src="https://www.youtube.com/embed/N4GqG7fGSTI" allowfullscreen></iframe>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                    </div>
                 </div>
-            </div>
-        </div>
     </section>
+
+
+
+    <!-- NEWS FECHAS -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="titulosPrincipales" id="presentando">PROXIMAS FECHAS</h1>
+                    <div>
+
+                        <div class="col-md-10 offset-md-1">
+                            <article class="divImagenDisco">
+                                <div class="card-column">
+                                    <div class="card text-white bg-dark mb-4">
+
+                                        <div class="card-body">
+                                            This is some text within a card body.
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-dark mb-4">
+                                        <div class="card-body">
+                                            This is some text within a card body.
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-dark mb-4">
+                                        <div class="card-body">
+                                            This is some text within a card body.
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-dark mb-4">
+                                        <div class="card-body">
+                                            This is some text within a card body.
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-white bg-dark mb-4">
+                                        <div class="card-body">
+                                            This is some text within a card body.
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
 
 
 
 
     <!-- FOOTER SECTION -->
     <footer id="footer">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sd-12">
-                    <nav class="d-flex justify-content-center align-items-center" id="navFooter">
-                        <a href="#" class="fa fa-facebook fa-2x"></a>
-                        <a href="#" class="fa fa-twitter fa-2x"></a>
-                        <a href="#" class="fa fa-google fa-2x"></a>
-                        <a href="#" class="fa fa-spotify fa-2x"></a>
-                        <a href="#" class="fa fa-youtube fa-2x"></a>
-                        <a href="#" class="fa fa-instagram fa-2x"></a>
-                    </nav>
+        <div id="heroImageFooter" class="d-flex flex-column justify-content-around">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 offset-md-2 text-center">
+                        <span class="titulosPrincipales"> <strong>TIEMPO DE HEROES Y PERDEDORES</strong></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <nav class="d-flex justify-content-center align-items-center" id="navFooter">
+                            <a href="https://www.facebook.com/thprocks" class="fa fa-facebook fa-2x"></a>
+                            <a href="https://twitter.com/thpmusica?fbclid=IwAR3wCu7hRVUEAO7K9jhOg8nTZri-uPyxygrheh5TE_qIFDu7MGxG3nj05QA"
+                                class="fa fa-twitter fa-2x"></a>
+                            <a href="#" class="fa fa-google fa-2x"></a>
+                            <a href="https://thprocks.bandcamp.com/" class="fa fa-spotify fa-2x"></a>
+                            <a href="https://www.youtube.com/channel/UCpwhEJZVby1lwBs2yEsdiTw"
+                                class="fa fa-youtube fa-2x"></a>
+                            <a href="https://www.instagram.com/thprocks/" class="fa fa-instagram fa-2x"></a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
