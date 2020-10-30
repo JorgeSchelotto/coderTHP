@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Teko:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Staatliches&display=swap');
 
 /* Configuracion inicial */
 
@@ -397,7 +398,7 @@ i {
 
 /* FOOTER */
 #footer{
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -444,6 +445,37 @@ i {
   background-color: #6666663a;
   border: none;
 }
+
+
+/* FECHAS */
+
+#card-style {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.p-card{
+  margin: .2rem;
+  font-family: 'Staatliches', cursive;
+  color: var(--h1-font-color);
+  font-size: 1.2rem;
+}
+
+.p-card_location{
+  margin: .2rem;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: rgb(148, 18, 18);
+  font-size: 1.5rem;
+  transform: rotate(-1deg);
+}
+
+
 /* Section ADELANTO */
 
 /* .adelanto{
