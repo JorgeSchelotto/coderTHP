@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Hind', sans-serif;
+  background-color: #0f0f0f !important;
+  color: #e2e2e2;
+  font-stretch: expanded; }
+  body .titulosPrincipales {
+    color: #ecc3ff;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center; }
+  body #navbar {
+    background: rgba(0, 0, 0, 0.589) !important;
+    /* position: fixed; */
+    z-index: 9999; }
+  body .navbar .navbar-nav {
+    margin: auto; }
+  body .navbar .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.589) !important; }
+  body .navbar .dropdown.show a {
+    color: #9e9e9e; }
+  body .navbar .dropdown-item hover {
+    background-color: rgba(0, 0, 0, 0.589) !important;
+    color: white; }
+  body .navbar .dropdown-item a hover {
+    color: white; }
+  body .titulosSecundarios {
+    color: #ecc3ff;
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    text-transform: uppercase; }
+  body .articleDescripcionBanda {
+    display: flex;
+    flex-direction: column; }
+  body .descripcionBanda {
+    display: flex;
+    flex-direction: column;
+    align-self: center; }

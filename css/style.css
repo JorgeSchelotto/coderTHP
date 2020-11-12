@@ -156,6 +156,12 @@ ol li {
   .grid-gallery:nth-child(3n+3) {
     margin: .5rem 1rem;
   }
+
+  .imagenDisco {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -315,6 +321,7 @@ form button:hover {
 .imagenDisco {
   width: 30vw;
   height: auto;
+  padding: 0 2rem 0 1rem;
 }
 
 .listaTemas {
@@ -325,6 +332,19 @@ form button:hover {
   flex-direction: column;
   color: var(--main-font-color);
   padding-bottom: 4rem;
+  padding: 0 1rem 0 2rem;
+}
+
+a, #temas_disco {
+  color: inherit;
+  text-decoration: none;
+}
+
+#temas_disco:hover {
+  text-decoration: underline;
+  background: linear-gradient(90deg,#DFB881 0%, #DA6544 50%,#D32A1D 100%);
+   -webkit-background-clip: text;
+     color: transparent;
 }
 
 
