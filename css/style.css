@@ -93,7 +93,9 @@ ol li {
 
 #heroImage {
   /* background: url("../assets/img/index/portada2.jpg"); */
+  
   background: linear-gradient(-45deg, rgba(1, 26, 24, 0.6), rgba(22, 1, 1, 0.6)), url("../assets/img/index/footer.jpg") no-repeat top center;
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
   background-size: cover;
   background-origin: content-box;
   height: 100vh;
@@ -103,12 +105,14 @@ ol li {
   bottom: 0;
   left: 0;
   right: 0;
+
+
 }
 
 
 body {
   /* background: url("../assets/img/index/portada2.jpg"); */
-  background: linear-gradient(-45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.8)), url("../assets/img/30.jpg") repeat top center;
+  background: linear-gradient(-45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url("../assets/img/30.jpg") repeat top center;
   background-size: cover;
   background-origin: content-box;
   height: 100vh;
@@ -488,6 +492,7 @@ i {
   margin: 0;
   padding: 0;
   text-align: center;
+  
   /* display: flex;
   flex-direction: row;
   align-items: center;
@@ -510,6 +515,16 @@ i {
   transform: rotate(-1deg);
 }
 
+
+.af--divider {
+  background: url(../assets/img/separador.png) repeat-x center center;
+  height: 50px;
+  width: 100%;
+  background-size: contain;
+  margin: 120px 0;
+  position: relative;
+  pointer-events: none;
+}
 
 /* Section ADELANTO */
 
