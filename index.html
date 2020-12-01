@@ -5,20 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="THP, tiempo de heores, rock, hardrock, metal, banda, la plata">
-    <meta name="description" content="Somos THP, una banda de rock nacida en la ciudad de La Plata. Escucha nuestro ultimo CD y enterate de nuestras novedades.">
-    <meta name="robots" content= "index, follow">
+    <meta name="description"
+        content="Somos THP, una banda de rock nacida en la ciudad de La Plata. Escucha nuestro ultimo CD y enterate de nuestras novedades.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" href="./favicon.png" type="image/png" sizes="32x32">  
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
-
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>THP - Home</title>
+
+    <!-- ScrollMagic -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <title>Home</title>
 </head>
 
-<body>
+<body id="body">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
@@ -45,7 +57,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="./sections/gallery.html">FOTOS</a>
                         <a class="dropdown-item" href="./sections/multimedia.html">VIDEOS</a>
-                        <a class="dropdown-item" href="https://thprocks.bandcamp.com/">AUDIO</a>
+                        <a class="dropdown-item" href="https://open.spotify.com/artist/2uz5nlITbR6cianKf0cqL1">AUDIO</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -62,20 +74,24 @@
 
     <!-- HERO SECTION -->
 
-    <section id="heroImage">
-        <div class="heroText">
-            <h1 class="titulosPrincipales">THP</h1>
-            <h3 class="titulosSecundarios">TIEMPO DE HEROES Y PERDEDORES</h3>
+    <section id="heroImage" class="heroImage">
+        <div class="heroText layer-1" id="parallax-back">
+            <img src="./assets/img/index/logo.png" alt="logo thp" class="img-fluid logo-index" >
+            <!-- <h1 class="titulosPrincipales">THP</h1> -->
+            <h3 class="titulosSecundarios animate__animated animate__fadeIn animate__delay-1s">TIEMPO DE HEROES Y PERDEDORES</h3>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+            <!-- <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
                 CONTACTANOS
-            </button>
-
+            </button> -->
+            <div class="arrow animate__animated animate__fadeIn animate__delay-1s">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        
     </section>
 
-    
+
     <!-- MODAL -->
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -85,22 +101,25 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control bgDarkForm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control bgDarkForm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control bgDarkForm" id="exampleInputPassword1" placeholder="Password">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control bgDarkForm" id="exampleInputPassword1"
+                                placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-dark">Submit</button>
-                      </form>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
 
 
     <!-- NEWS SECTION -->
@@ -130,21 +149,107 @@
                 </div>
     </section>
 
-    <div class="af--divider"></div>
+    <div class="divisor"></div>
 
-    <!-- NEWS FECHAS -->
+    <!-- MERCH -->
+    <section class="merch">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="titulosPrincipales" id="presentando--secondStyle">Merch</h1>
+                    <div>
+
+                        <div class="row text-center">
+
+
+                            <div class="col-sm-6 ">
+                                <div class="card text-white dark" id="card-merch">
+                                    <img class="card-img-top" src="./assets/img/index/discos.jpg"
+                                        alt="productos remeras">
+                                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end bg-darkTransparent">
+                                        <h5 class="card-title">Discos</h5>
+                                        <p class="card-subtitle mb-2 text-muted"></p>
+                                        <p class="card-text">En formato digital y CD fisico</p>
+                                            <div class="card-footer"> <a href="https://mpago.la/2SkwZsh"
+                                                class="card-link">Comprar</a></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card text-white dark" id="card-merch">
+                                    <img class="card-img-top" src="./assets/img/index/remeraTHP.jpg"
+                                        alt="productos busos">
+                                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end bg-darkTransparent">
+                                        <h5 class="card-title">Remeras</h5>
+                                        <p class="card-subtitle mb-2 text-muted">Algodón premium estampadas en serigrafia
+                                        </p>
+                                        <p class="card-text">Colores rojo, blanco, negro con estampa en negro o
+                                            blanco</p>
+                                            <div class="card-footer"> <a href="https://mpago.la/2SkwZsh"
+                                                class="card-link">Comprar</a></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 ">
+                                <div class="card text-white dark" id="card-merch">
+                                    <img class="card-img-top" src="./assets/img/index/gorras.jpg"
+                                        alt="productos gorras">
+                                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end bg-darkTransparent">
+                                        <h5 class="card-title">Gorras Trucker</h5>
+                                        <p class="card-subtitle mb-2 text-muted">Frenta blanco sublimado</p>
+                                        <p class="card-text">Colores rojo, blanco, negro con estampa en negro o
+                                            blanco</p>
+                                            <div class="card-footer"> <a href="https://mpago.la/2SkwZsh"
+                                                class="card-link">Comprar</a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card text-white dark" id="card-merch">
+                                    <img class="card-img-top" src="./assets/img/index/tazathp.jpg" alt="productos taza">
+                                    <div class="card-img-overlay h-100 d-flex flex-column justify-content-end bg-darkTransparent">
+                                        <h5 class="card-title">Tazas</h5>
+                                        <p class="card-subtitle mb-2 text-muted">De ceramica</p>
+                                        <p class="card-text">Colores taza blanca estampa negra</p>
+                                        <div class="card-footer"> <a href="https://mpago.la/2SkwZsh"
+                                            class="card-link">Comprar</a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+    </section>
+
+
+    <div class="divisor"></div>
+
+
+    <!-- FECHAS -->
     <section class="fechas">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="titulosPrincipales" id="presentando">PROXIMAS FECHAS</h1>
+                    <h1 class="titulosPrincipales" id="presentando--secondStyle">PROXIMAS FECHAS</h1>
                     <div>
 
                         <div class="col-md-12">
                             <article class="divImagenDisco">
                                 <div class="card-column">
 
-                                    <div class="card text-white bg-dark mb-4">
+                                    <div class="card text-white dark mb-4">
                                         <div class="card-body">
                                             <div class="card-body row" id="card-style">
                                                 <p class="p-card_location col-md-4">La Plata</p>
@@ -154,7 +259,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card text-white bg-dark mb-4">
+                                    <div class="card text-white dark mb-4">
                                         <div class="card-body">
                                             <div class="card-body row" id="card-style">
                                                 <p class="p-card_location col-md-4">CABA</p>
@@ -164,7 +269,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card text-white bg-dark mb-4">
+                                    <div class="card text-white dark mb-4">
                                         <div class="card-body ">
                                             <div class="card-body row" id="card-style">
                                                 <p class="p-card_location col-md-4">Villa Adelina</p>
@@ -174,7 +279,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card text-white bg-dark mb-4">
+                                    <div class="card text-white dark mb-4">
                                         <div class="card-body ">
                                             <div class="card-body row" id="card-style">
                                                 <p class="p-card_location col-md-4">Gral. Mosconi</p>
@@ -184,7 +289,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card text-white bg-dark mb-4">
+                                    <div class="card text-white dark mb-4">
                                         <div class="card-body">
                                             <div class="card-body row" id="card-style">
                                                 <p class="p-card_location col-md-4">Ezeiza</p>
@@ -201,8 +306,6 @@
                 </div>
     </section>
 
-
-    <div class="af--divider"></div>
 
 
     <!-- FOOTER SECTION -->
@@ -242,6 +345,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+
+        <script src="./scripts//parallax.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+        
 
 
 </body>
