@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Parallaz
+    // Parallax. Al final no lo use. Mucho porblemas para llevarlo a responsive.
     var controller = new ScrollMagic.Controller();
     $('.parallax').each(function () {
 
