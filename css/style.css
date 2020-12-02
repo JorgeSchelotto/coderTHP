@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Teko:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Staatliches&display=swap');
 
+/* Cargo una fuente desde la carpeta assets/fonts */
 @font-face {
   font-family: "vtks desgaste";
   font-style: normal;
@@ -463,7 +464,7 @@ a,
 }
 
 
-/* NAVBAR */
+/* NAVBAR - uso important para sobreescribir bootstrap */
 
 #navbar {
   background: var(--nav-back-color) !important;
@@ -787,7 +788,6 @@ img {
 
 #heroImageNosotros {
   height: inherit;
-  /* background: linear-gradient(-45deg, rgba(1, 26, 24, 0.8), rgba(22, 1, 1, 0.5)), url("../assets/img/index/footer.jpg") no-repeat center center fixed; */
   background: linear-gradient(-45deg, rgba(1, 26, 24, 0.6), rgba(22, 1, 1, 0.6)), url("../assets/img/nosotros/fondo2.jpg") no-repeat top center fixed;
   background-size: cover;
   z-index: 0;
@@ -816,7 +816,8 @@ img {
 }
 
 .parrafoAnimado {
-  font-family: "vtks desgaste";;
+  font-family: "vtks desgaste";
+  ;
   background: linear-gradient(90deg, #DFB881 0%, #DA6544 50%, #D32A1D 100%);
   -webkit-background-clip: text;
   color: transparent;
@@ -860,22 +861,22 @@ img {
     font-size: 8rem;
     transform: rotate(0.01turn);
   }
-  
+
   .parrafoAnimado_2--style {
     font-size: 4rem;
     transform: rotate(-0.01turn);
   }
-  
+
   .parrafoAnimado_3--style {
     font-size: 5rem;
     transform: rotate(0.017turn);
   }
-  
+
   .parrafoAnimado_4--style {
     font-size: 3rem;
     transform: rotate(-0.012turn);
   }
-  
+
   .parrafoAnimado_5--style {
     font-size: 4rem;
     transform: rotate(0.001turn);
@@ -889,22 +890,24 @@ img {
 
 }
 
+/* Esta seccion me ayuda con el tamaño de las letras animadas */
 /* #Dispositivo = Tablets de baja resolución y teléfonos Móviles (horizontal) 
 #Resolución = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
   .parrafoAnimado {
-    font-size: 4rem; 
+    font-size: 4rem;
   }
+
   .spacer {
     width: auto;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
   }
 }
- 
+
 /* Smartphones (landscape) */
 @media only screen and (min-width : 321px) {
   .spacer {
@@ -913,10 +916,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
   }
 }
- 
+
 /* Smartphones (portrait) */
 @media only screen and (max-width : 320px) {
   .spacer {
@@ -925,10 +928,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  } 
+
+  }
 }
- 
+
 /* iPads (portrait & landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .spacer {
@@ -937,38 +940,36 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
   }
 }
- 
+
 /* iPads (landscape) 
 #Dispositivo = Tablets, Ipads (horizontal) 
 #Resolución = B/w 768px to 1024px */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
-and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   .spacer {
     width: auto;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  } 
+
+  }
 }
- 
+
 /* iPads (portrait) 
 #Dispositivo = Tablets, Ipads (vertical) 
 #Resolucion = B/w 768px to 1024px */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
-and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   .spacer {
     width: auto;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  } 
+
+  }
 }
 
 #contenedor--letrasAnimadas {
@@ -998,17 +999,3 @@ and (orientation : portrait) {
   z-index: -9999;
   padding: 1rem 0 1rem 0;
 }
-
-
-/* Animacion */
-
-/* .fade-in{
-  opacity:0;
-  transform: translateY(50px);
-  transition: all 1s ease-out;
-}
-
-.fade-in.show{
-  opacity:1;
-  transform: translateY(0);
-} */

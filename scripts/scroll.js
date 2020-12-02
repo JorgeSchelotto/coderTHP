@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     var controller = new ScrollMagic.Controller();
 
-
+    // Animacion de fade-in 
     $('.fade-in').each(function(){
 
         var tween = TweenMax.from($(this), 0.375, {autoAlpha: 0, sacale: 0.5, y: '+=30', ease:Linear.easeNone});
@@ -13,7 +13,7 @@ $(document).ready(function(){
             triggerHook: 0.7,
         })
         .setTween(tween)
-        // .addIndicators()
+        // .addIndicators() // Solo para debug
         .addTo(controller);
 
      });
